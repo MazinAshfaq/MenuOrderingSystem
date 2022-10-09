@@ -1,3 +1,8 @@
+import Breakfast;
+import Lunch;
+import Dinner;
+
+import java.util.Scanner;
 
 public class Order {
    private String main;
@@ -7,9 +12,18 @@ public class Order {
       this.main = main;
       this.side = side;
     }
+
+    //Default constructor
+    public Order(){}
     
-    public static void Order(String[] args) { 
-        
+    public static void main(String[] args) { 
+      Scanner cin = new Scanner(System.in);
+        Boolean valid = false;
+        do {
+         System.out.println( "\nPlease enter a valid meal time. (EX: Breakfast, Lunch or Dinner)");
+         String userInput = cin.next();
+        } while (valid != true;);
+        System.out.println("correct!\n");
     }
 
  }
