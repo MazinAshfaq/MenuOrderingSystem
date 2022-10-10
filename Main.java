@@ -4,70 +4,79 @@ import java.util.List;
 
 public class Main {
 
-    
-    public static int[] parseOrderNumbers(String[] ordersStringArray){
+    public static int[] parseOrderNumbers(String[] ordersStringArray) {
 
         int[] orderNumbersIntArray = Arrays.stream(ordersStringArray).mapToInt(Integer::parseInt).toArray();
         return orderNumbersIntArray;
     }
-  
+
     public static Boolean validateInput(String mealTime, int[] orderNumbersIntArray) {
-      //Create meal times list to check input against
-      String[] mealTimesArray = new String[]{"breakfast", "lunch", "dinner"};
-      List<String> list = Arrays.asList(mealTimesArray);
-    
-      //Check if mealtime is entered correctly
-      if (!list.contains(mealTime.toLowerCase())) {
-        System.out.println(
-          "\nPlease enter a valid meal time. (EX: Breakfast, Lunch or Dinner)"
-        );
-        
-        return false;
+        // Create meal times list to check input against
+        String[] mealTimesArray = new String[] { "breakfast", "lunch", "dinner" };
+        List<String> list = Arrays.asList(mealTimesArray);
+
+        // Check if mealtime is entered correctly
+        if (!list.contains(mealTime.toLowerCase())) {
+            System.out.println(
+                    "\nPlease enter a valid meal time. (EX: Breakfast, Lunch or Dinner)");
+
+            return false;
         }
 
-      //Check if any of the order numbers do not exist.
-      for(int i = 0; i < orderNumbersIntArray.length; i++){
-        if(orderNumbersIntArray[i] > 4){
-            System.out.println("\nOne of the items in your order does not exist\n");
-            return false; 
+        // Check if any of the order numbers do not exist.
+        for (int i = 0; i < orderNumbersIntArray.length; i++) {
+            if (orderNumbersIntArray[i] > 4) {
+                System.out.println("\nOne of the items in your order does not exist\n");
+                return false;
+            }
         }
-      }
-    return true;
+        return true;
     }
-    
-    public static void main(String[] args) { 
 
-      Scanner cin = new Scanner(System.in);
+    public static void main(String[] args) {
+
+        Scanner cin = new Scanner(System.in);
         Boolean valid = false;
         String mealTime;
-        int[] orderNumbers;
+        int[] orderNumbers = {};
 
         do {
-         System.out.println("Please enter the meal followed by ids of food seperated with commas from its menu! (EX: Breakfast 1,2,3)");
-         
-         //Grab and save user input
-         String userInput = cin.nextLine();
-         String stringArr[] = userInput.split(" ");
+            System.out.println(
+                    "Please enter the meal followed by ids of food seperated with commas from its menu! (EX: Breakfast 1,2,3)");
 
-         mealTime = stringArr[0];
-         //Convert string of order numbers to int array
-         orderNumbers = parseOrderNumbers(stringArr[1].split(","););
+            // Grab and save user input
+            String userInput = cin.nextLine();
+            String stringArr[] = userInput.split(" ");
 
-         valid = validateInput(mealTime, orderNumbers);
+            mealTime = stringArr[0].toLowerCase();
+            // Convert string of order numbers to int array
+            try {
+                orderNumbers = parseOrderNumbers(stringArr[1].split(","));
+            } catch (NumberFormatException e) {
+                System.out.println("Bad order input");
+                break;
+            }
+
+            valid = validateInput(mealTime, orderNumbers);
+
+            if (valid) {
+                try {
+                    if (mealTime.equals("breakfast")) {
+                        Breakfast order = new Breakfast(orderNumbers);
+                        order.printOrder();
+                    } else if (mealTime.equals("lunch")) {
+                        Lunch order = new Lunch(orderNumbers);
+                        // order.printOrder();
+                    } else {
+                        Dinner order = new Dinner(orderNumbers);
+                        // order.printOrder();
+                    }
+                } catch (Exception e) {
+                    valid = false;
+                }
+            }
 
         } while (valid != true);
-
-        if(valid){
-            if(mealTime == "breakfast"){
-                Breakfast order = new Breakfast(orderNumbers);
-            }
-            else if(mealTime == "lunch"){
-                Lunch order = new Lunch(orderNumbers);
-            }
-            else{
-                Dinner order = new Dinner(orderNumbers);
-            }
-        }
 
     }
 }
