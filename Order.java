@@ -19,13 +19,17 @@ public class Order {
     public Order(){}
 
     public static Boolean validateInput(String userInput) {
-      String stringArr[] = userInput.split(" ", 2);
+
+      String stringArr[] = userInput.split(" ");
       String mealTime = stringArr[0];
+      //Convert string of order numbers to int array
+      String [] orderNumbers = stringArr[1].split(",");
+      int[] orderNumbersIntArray = Arrays.stream(orderNumbers).mapToInt(Integer::parseInt).toArray();
+      //Arrays.sort(orderNumbersIntArray);
+
+      //Create meal times list to check input against
       String[] mealTimesArray = new String[]{"breakfast", "lunch", "dinner"};
       List<String> list = Arrays.asList(mealTimesArray);
-
-      //Int orderNumbersArray[] = orderNumberStringToArray(stringArr[1]);
-
     
       //Check if mealtime is entered correctly
       if (!list.contains(mealTime.toLowerCase())) {
@@ -33,16 +37,15 @@ public class Order {
           "\nPlease enter a valid meal time. (EX: Breakfast, Lunch or Dinner)"
         );
         return false;
+    }
+
+      //Check if any of the order numbers do not exist.
+      for(int i = 0; i < orderNumbersIntArray.length; i++){
+        if(orderNumbersIntArray[i] > 4){
+            System.out.println("\nOne of the items in your order does not exist\n");
+            return false; 
+        }
       }
-    //   //Check if any of the order numbers do not exist.
-    //   if (
-    //     !orderNumbersArray.every(function (e) {
-    //       return e <= 4;
-    //     })
-    //   ) {
-    //     console.log("\nOne of the items in your order does not exist\n");
-    //     return false;
-    //   }
     //   return [meanTime, orderNumbersArray];
     return true;
     }
@@ -51,11 +54,11 @@ public class Order {
       Scanner cin = new Scanner(System.in);
         Boolean valid = false;
         do {
-         System.out.println( "\nPlease enter a valid meal time. (EX: Breakfast, Lunch or Dinner)");
-         String userInput = cin.next();
+         System.out.println("Please enter the meal followed by ids of food seperated with commas from its menu! (EX: Breakfast 1,2,3)");
+         String userInput = cin.nextLine();
          valid = validateInput(userInput);
         } while (valid != true);
-        System.out.println("correct!\n");
+
     }
 
  }
