@@ -23,9 +23,20 @@ public class Order {
     this.side = side;
   }
 
-  public Order(String main, String side) {
+  private String drink;
+
+  public String getDrink() {
+    return drink;
+  }
+
+  public void setDrink(String drink) {
+    this.drink = drink;
+  }
+
+  public Order(String main, String side, String drink) {
     this.main = main;
     this.side = side;
+    this.drink = drink;
   }
 
   // Check if main and side are included
