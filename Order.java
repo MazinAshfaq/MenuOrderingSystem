@@ -46,11 +46,11 @@ public class Order {
     if (!mainMissing && !sideMissing) {
       return false;
     } else if (mainMissing && !sideMissing) {
-      System.out.println("Unable to process: Main is missing");
+      System.out.println("\nUnable to process: Main is missing");
     } else if (mainMissing && sideMissing) {
-      System.out.println("Unable to process: Main is missing, side is missing");
+      System.out.println("\nUnable to process: Main is missing, side is missing");
     } else {
-      System.out.println("Unable to process: Side is missing");
+      System.out.println("\nUnable to process: Side is missing");
     }
 
     return true;

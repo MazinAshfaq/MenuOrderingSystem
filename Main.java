@@ -23,9 +23,15 @@ public class Main {
             return false;
         }
 
+        int limit = 0;
         // Check if any of the order numbers do not exist.
+        if (mealTime.equals("breakfast") || mealTime.equals("lunch")) {
+            limit = 3;
+        } else {
+            limit = 4;
+        }
         for (int i = 0; i < orderNumbersIntArray.length; i++) {
-            if (orderNumbersIntArray[i] > 4) {
+            if (orderNumbersIntArray[i] > limit) {
                 System.out.println("\nOne of the items in your order does not exist\n");
                 return false;
             }
@@ -51,7 +57,10 @@ public class Main {
             mealTime = stringArr[0].toLowerCase();
             // Convert string of order numbers to int array
             try {
-                orderNumbers = parseOrderNumbers(stringArr[1].split(","));
+                if (stringArr.length > 1) {
+                    orderNumbers = parseOrderNumbers(stringArr[1].split(","));
+                }
+
             } catch (NumberFormatException e) {
                 System.out.println("Bad order input");
                 break;
@@ -66,10 +75,10 @@ public class Main {
                         order.printOrder();
                     } else if (mealTime.equals("lunch")) {
                         Lunch order = new Lunch(orderNumbers);
-                        // order.printOrder();
+                        order.printOrder();
                     } else {
                         Dinner order = new Dinner(orderNumbers);
-                        // order.printOrder();
+                        order.printOrder();
                     }
                 } catch (Exception e) {
                     valid = false;
