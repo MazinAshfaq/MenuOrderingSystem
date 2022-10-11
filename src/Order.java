@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Order {
     private String main;
@@ -69,16 +67,13 @@ public class Order {
 
     public boolean hasDrink(int[] orderNumbers) {
         int drink = 3;
-        if (!contains(orderNumbers, drink)) {
-            return false;
-        }
-        return true;
+        return contains(orderNumbers, drink);
     }
 
     public int countMultipleOrders(int[] orderNumbers, int order) {
         int count = 0;
-        for (int i = 0; i < orderNumbers.length; i++) {
-            if (orderNumbers[i] == order) {
+        for (int orderNumber : orderNumbers) {
+            if (orderNumber == order) {
                 count++;
             }
         }
