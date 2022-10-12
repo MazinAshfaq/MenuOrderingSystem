@@ -51,8 +51,10 @@ public class Main {
         String mealTime;
         int[] orderNumbers = {};
 
+        printMenu();
+
         do {
-            printMenu();
+
             System.out.println(
                     "Please enter the meal followed by ids of food seperated with commas from its menu! (EX: Breakfast 1,2,3)\n");
 

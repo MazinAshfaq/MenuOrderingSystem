@@ -21,7 +21,7 @@ public class Breakfast extends Order {
         super.setSide("Toast");
 
         if (!super.hasDrink(orderNumbers)) {
-            super.setDrink("water");
+            super.setDrink("Water");
         } else {
             int count = super.countMultipleOrders(orderNumbers, 3);
             String drink = "Coffee(" + Integer.toString(count) + ")";
