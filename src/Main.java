@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Main {
 
+    public static void printMenu(){
+        System.out.println("Breakfast\nMain      Side      Drink\n1:Eggs    2:Toast   3:Coffee\n\nLunch\n" +
+                "Main           Side      Drink\n1:Sandwich     2:Chips   3:Soda\n\nDinner\nMain         Side        Drink" +
+                "      Dessert\n1:Steak      2:Potatoes  3:Wine     4:Cake\n");
+    }
+
     public static int[] parseOrderNumbers(String[] ordersStringArray) {
 
         int[] orderNumbersIntArray = Arrays.stream(ordersStringArray).mapToInt(Integer::parseInt).toArray();
@@ -46,8 +52,9 @@ public class Main {
         int[] orderNumbers = {};
 
         do {
+            printMenu();
             System.out.println(
-                    "Please enter the meal followed by ids of food seperated with commas from its menu! (EX: Breakfast 1,2,3)");
+                    "Please enter the meal followed by ids of food seperated with commas from its menu! (EX: Breakfast 1,2,3)\n");
 
             // Grab and save user input
             String userInput = cin.nextLine();

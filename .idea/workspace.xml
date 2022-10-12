@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9c578c3-43db-48d0-8164-5a86bbe2ce79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/DinnerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/LunchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dinner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lunch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/OrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BreakfastTest.propertiesAreSetOnOrderConstructor">
+  <component name="RunManager">
     <configuration name="BreakfastTest.propertiesAreSetOnOrderConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MenuOrderingSystem" />
       <option name="PACKAGE_NAME" value="" />
