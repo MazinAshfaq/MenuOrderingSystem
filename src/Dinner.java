@@ -16,7 +16,7 @@ public class Dinner extends Order {
             throw new IllegalArgumentException();
         }
 
-        if (!dessertMissing(orderNumbers)) {
+        if (dessertMissing(orderNumbers)) {
             throw new IllegalArgumentException();
         }
 
@@ -46,7 +46,7 @@ public class Dinner extends Order {
 
     }
 
-    private boolean dessertMissing(int[] orderNumbers) {
+    public boolean dessertMissing(int[] orderNumbers) {
         if (!super.contains(orderNumbers, 4)) {
             System.out.println("\nUnable to process: Dessert is missing");
             return true;

@@ -10,7 +10,8 @@ class OrderTest {
 
         assertEquals("Eggs",testOrder.getMain());
         assertEquals("Toast",testOrder.getSide());
-        assertEquals("Water",testOrder.getDrink());}
+        assertEquals("Water",testOrder.getDrink());
+    }
 
     @Test
     void shouldReturnTrueWhenMainIsMissing() {

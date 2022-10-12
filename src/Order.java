@@ -83,6 +83,5 @@ public class Order {
     public static boolean contains(final int[] arr, final int key) {
         return Arrays.stream(arr).anyMatch(i -> i == key);
     }
-
 }
 

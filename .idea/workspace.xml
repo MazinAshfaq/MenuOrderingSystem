@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9c578c3-43db-48d0-8164-5a86bbe2ce79" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/OrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/DinnerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/LunchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenuOrderingSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MenuOrderingSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MenuOrderingSystem/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MenuOrderingSystem/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MenuOrderingSystem/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MenuOrderingSystem/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MenuOrderingSystem/MenuOrderingSystem.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MenuOrderingSystem/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dinner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lunch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/OrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,27 +31,29 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Fvo2xvweBdb9l6363nSp95KMua" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -63,52 +62,52 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderTest.propertiesAreSetOnOrderConstructor">
-    <configuration name="OrderTest.contains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BreakfastTest.propertiesAreSetOnOrderConstructor">
+    <configuration name="BreakfastTest.propertiesAreSetOnOrderConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MenuOrderingSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OrderTest" />
-      <option name="METHOD_NAME" value="contains" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderTest.countMultipleOrders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MenuOrderingSystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OrderTest" />
-      <option name="METHOD_NAME" value="countMultipleOrders" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderTest.propertiesAreSetOnOrderConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MenuOrderingSystem" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OrderTest" />
+      <option name="MAIN_CLASS_NAME" value="BreakfastTest" />
       <option name="METHOD_NAME" value="propertiesAreSetOnOrderConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.shouldReturnFalseWhenDrinkIsMissing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DinnerTest.propertiesAreSetOnOrderConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MenuOrderingSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OrderTest" />
-      <option name="METHOD_NAME" value="shouldReturnFalseWhenDrinkIsMissing" />
+      <option name="MAIN_CLASS_NAME" value="DinnerTest" />
+      <option name="METHOD_NAME" value="propertiesAreSetOnOrderConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.shouldReturnFalseWhenInputContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DinnerTest.shouldReturnFalseIfDessertIsNotMissing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MenuOrderingSystem" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="OrderTest" />
-      <option name="METHOD_NAME" value="shouldReturnFalseWhenInputContains" />
+      <option name="MAIN_CLASS_NAME" value="DinnerTest" />
+      <option name="METHOD_NAME" value="shouldReturnFalseIfDessertIsNotMissing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DinnerTest.shouldReturnTrueIfDessertIsMissing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MenuOrderingSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DinnerTest" />
+      <option name="METHOD_NAME" value="shouldReturnTrueIfDessertIsMissing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LunchTest.propertiesAreSetOnOrderConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MenuOrderingSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LunchTest" />
+      <option name="METHOD_NAME" value="propertiesAreSetOnOrderConstructor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderTest.propertiesAreSetOnOrderConstructor" />
-        <item itemvalue="JUnit.OrderTest.shouldReturnFalseWhenInputContains" />
-        <item itemvalue="JUnit.OrderTest.contains" />
-        <item itemvalue="JUnit.OrderTest.countMultipleOrders" />
-        <item itemvalue="JUnit.OrderTest.shouldReturnFalseWhenDrinkIsMissing" />
+        <item itemvalue="JUnit.BreakfastTest.propertiesAreSetOnOrderConstructor" />
+        <item itemvalue="JUnit.DinnerTest.shouldReturnFalseIfDessertIsNotMissing" />
+        <item itemvalue="JUnit.DinnerTest.shouldReturnTrueIfDessertIsMissing" />
+        <item itemvalue="JUnit.DinnerTest.propertiesAreSetOnOrderConstructor" />
+        <item itemvalue="JUnit.LunchTest.propertiesAreSetOnOrderConstructor" />
       </list>
     </recent_temporary>
   </component>
@@ -145,5 +144,29 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Lunch.java</url>
+          <line>7</line>
+          <properties class="Lunch" method="setDrink">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/test/LunchTest.java</url>
+          <line>7</line>
+          <properties class="LunchTest" method="propertiesAreSetOnOrderConstructor">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

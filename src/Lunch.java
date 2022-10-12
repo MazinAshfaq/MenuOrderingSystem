@@ -10,6 +10,7 @@ public class Lunch extends Order {
     }
 
     public Lunch(int[] orderNumbers) {
+
         super(null, null, null);
 
         if (super.checkMainAndSideMissing(orderNumbers)) {
@@ -27,9 +28,9 @@ public class Lunch extends Order {
         super.setSide(countSides(orderNumbers));
 
         if (!super.hasDrink(orderNumbers)) {
-            super.setDrink("water");
+            super.setDrink("Water");
         } else {
-            super.setDrink(drink);
+            super.setDrink("Soda");
         }
 
     }
